@@ -1,50 +1,48 @@
 
-#include <stdio.h>
-int main()
+#include <stdio.h><BR>
+char matrix[3][3];<BR>
+int i, j;<BR>
+for (i = 0; i < 3; i++)<BR>
 {
-char matrix[3][3];
-int i, j;
-for (i = 0; i < 3; i++)
+for (j = 0; j < 3; j++)<BR>
 {
-for (j = 0; j < 3; j++)
-{
-matrix[i][j] = ' ';
+matrix[i][j] = ' ';<BR>
 }
 }
 
-while (1)
+while (1)<BR>
 {
-int row, col;
-char ch;
-printf("\nCurrent Matrix:\n");
-for (i = 0; i < 3; i++)
+int row, col;<BR>
+char ch;<BR>
+printf("\nCurrent Matrix:\n");<BR>
+for (i = 0; i < 3; i++)<BR>
 {
-for (j = 0; j < 3; j++)
+for (j = 0; j < 3; j++)<BR>
 {
-if (matrix[i][j] == ' ')
-printf("null\t");
-else
-printf("%c\t", matrix[i][j]);
+if (matrix[i][j] == ' ')<BR>
+printf("null\t");<BR>
+else<BR>
+printf("%c\t", matrix[i][j]);<BR>
 }
-printf("\n");
+printf("\n");<BR>
 }
-printf("\nEnter the Position : ");
-scanf("%d %d", &row, &col);
-if (matrix[row][col] != ' ')
+printf("\nEnter the Position : ");<BR>
+scanf("%d %d", &row, &col);<BR>
+if (matrix[row][col] != ' ')<BR>
 {
-printf(" This position is already filled with '%c'\n", matrix[row][col]);
-continue;
+printf(" This position is already filled with '%c'\n", matrix[row][col]);<BR>
+continue;<BR>
 }
-while (getchar() != '\n');
-printf("Enter your string: ");
-scanf("%c", &ch);
-if (ch != 'x' && ch != 'o')
+while (getchar() != '\n');<BR>
+printf("Enter your string: ");<BR>
+scanf("%c", &ch);<BR>
+if (ch != 'x' && ch != 'o')<BR>
 {
-printf("\n ....Game only accept 'x' & 'o' Charecter....");
-continue;
+printf("\n ....Game only accept 'x' & 'o' Charecter....");<BR>
+continue;<BR>
 }
-matrix[row][col] = ch;
+matrix[row][col] = ch;<BR>
 }
-return 0;
+return 0;<BR>
 }
 
