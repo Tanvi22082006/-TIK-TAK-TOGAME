@@ -1,5 +1,7 @@
 
 #include <stdio.h><BR>
+int main()
+
 char matrix[3][3];<BR>
 int i, j;<BR>
 for (i = 0; i < 3; i++)<BR>
